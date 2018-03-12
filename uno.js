@@ -1,20 +1,27 @@
 
 function Mostrar()
-{
-	var altura 
-	var perimetro
-	var superficie
-	var base 
+{	/* EJERCICIO UNO DE PARCIAL
+	var ancho;
+	var largo;
+	var perimetro;
 
-	altura = document.getElementById('laBase').value;
-	perimetro = altura * 3
-	superficie = Math.sqrt(3*altura) / 2 
-	alert("la superficie es  ");
+	ancho = prompt("Ingrese la medida del ancho");
+	largo = prompt("Ingrese la medida del largo");
+
+	perimetro = ancho * largo;
+	alert("El perimetro es " + perimetro); 
+	*/
+
+	var nombre;
+	var localidad;
+
+	nombre = prompt("Ingrese su nombre");
+	localidad = prompt("Ingrese su localidad");
+
+	alert("Usted se llama " + nombre + " y vive en la localidad de " + localidad );
 
 
 
 
-
-	//pedir base por cuadro de texto de triangulo equilatero por perimetro y la base del perimetro por la superficie 
 
 }

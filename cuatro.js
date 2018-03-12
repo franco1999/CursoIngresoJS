@@ -2,34 +2,40 @@ function Mostrar()
 {
 	var numeroUno;
 	var numeroDos;
-	var numeroTres;
+	var resultado;
 
-	numeroUno = prompt("ingrese un numero");
+	numeroUno = prompt("Ingrese un numero");
 	numeroUno = parseInt(numeroUno);
 
-	numeroDos = prompt("ingrese un numero")
+	numeroDos = prompt("Ingrese un numero");
 	numeroDos = parseInt(numeroDos);
 
-	numeroTres = prompt("Ingrese un numero")
-	numeroTres = parseInt(numeroTres);
-
-	if ((numeroUno > numeroDos && numeroUno > numeroTres))
+	if(numeroUno==numeroDos)
 	{
-		alert("el numero mayor es " + numeroUno);
-
+		alert(numeroUno +""+ numeroDos);
 	}
-	else if 
-		((numeroDos > numeroUno && numeroDos > numeroTres))
+	else if (numeroUno > numeroDos)
 	{
-		alert("su numero mayor es " + numeroDos);
-	
+		resultado = numeroUno - numeroDos;
+		alert(resultado);
 	}
 	else
-		((numeroTres > numeroUno && numeroTres > numeroDos))
 	{
-		alert("su numero mayor es " + numeroTres);
-	
+		resultado = numeroUno + numeroDos;
+		
+		if(resultado>10)
+		{ 
+			alert("La suma es " + resultado + " y supero el 10");
+		}
+		else
+		{
+			alert(" su resultado es " + resultado);
+		}
+
 	}
-	
+
+
+ 
+
 
 }
