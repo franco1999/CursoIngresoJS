@@ -1,5 +1,5 @@
-//Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
-function Mostar()
+//Debemos lograr mostrar un mensaje al presionar el botón  'mostrar'.
+function mostrar()
 {
 	
 }
