@@ -1,15 +1,27 @@
 
 function mostrar()
 {
-	var ancho;
-	var largo;
-	var resultado;
+	//se ingresan 3 numeros, informar en un solo alert: la suma, el promedio, y la resta 
+	//de los numeros tal cual fueron ingresados.
+	var numeroUno;
+	var numeroDos;
+	var numeroTres;
+	var resultadoDeSuma;
+	var promedio;
+	var resultadoDeResta;
 
-	ancho=prompt("Ingrese el ancho");
-	largo=prompt("Ingrese el largo");
+	numeroUno=prompt("Ingrese un numero");
+	numeroDos=prompt("Ingrese un numero");
+	numeroTres=prompt("Ingrese un numero");
 
-	resultado=ancho*largo;
+	numeroUno=parseInt(numeroUno);
+	numeroDos=parseInt(numeroDos);
+	numeroTres=parseInt(numeroTres);
 
-	alert("El perimetro es "+resultado);
+	resultadoDeSuma=numeroUno+numeroDos+numeroTres;
+	promedio=numeroUno+numeroDos+numeroTres/3;
+	resultadoDeResta=numeroUno-numeroDos-numeroTres;
+
+	alert("El resultado de la suma es "+resultadoDeSuma+", el promedio es "+promedio+" y el resultado de la resta es "+ resultadoDeResta);
 
 }
