@@ -8,14 +8,15 @@ function SacarResto()
 	var numeroDivisor;
 	var resto;
 
-	numeroDividendo = document.getElementById('numeroDividendo').value;
-	numeroDivisor = document.getElementById('numeroDivisor').value;
+	numeroDividendo=document.getElementById('numeroDividendo').value;
+	numeroDivisor=document.getElementById('numeroDivisor').value;
 
-	numeroDividendo = parseInt(numeroDividendo);
-	numeroDivisor = parseInt(numeroDivisor);
+	numeroDividendo=parseInt(numeroDividendo);
+	numeroDivisor=parseInt(numeroDivisor);
 
-	resto = numeroDividendo % numeroDivisor;
+	resto=numeroDividendo%numeroDivisor;
 
-	alert("el resto es " + resto); 
+	alert("El resto es "+resto);
+
 
 }
