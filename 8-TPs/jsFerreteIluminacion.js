@@ -10,5 +10,63 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+	var cantidadDeLamparitas;
+	var precio=35;
+	var precioTotal;
+	var marca;
+	var precioConDescuento;
+	var precioConImpuesto;
+
+	cantidadDeLamparitas=document.getElementById('Cantidad').value;
+	marca=document.getElementById('Marca').value;
+
+	if(cantidadDeLamparitas>=6 && marca=="ArgentinaLuz","FelipeLamparas","JeLuz","HazIluminacion","Osram"){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(50*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+	}
+
+	if(cantidadDeLamparitas==5 && marca=="ArgentinaLuz"){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(60*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+	} else  {
+		if(cantidadDeLamparitas==5){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(70*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+
+	}
+		}
+	if(cantidadDeLamparitas==4 && marca=="ArgentinaLuz","FelipeLamparas"){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(75*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+	} else {
+		if(cantidadDeLamparitas==4 && marca=="JeLuz","HazIluminacion","Osram"){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(80*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+		}
+	}
+	if(cantidadDeLamparitas==3 && marca=="ArgentinaLuz"){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(85*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+	} else {
+		if(marca=="FelipeLamparas"){
+		precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(90*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+		
+		} else {
+			precioTotal=precio*cantidadDeLamparitas;
+		precioConDescuento=(95*precioTotal)/100;
+		document.getElementById('precioDescuento').value=precioConDescuento;
+		} 
+	}
+	if(precioConDescuento>120){
+		precioConImpuesto=(110*precioConDescuento)/100;
+		alert("IIBB Usted pagó "+precioConImpuesto);
+	}
 }
