@@ -5,20 +5,17 @@ function Mostrar()
 
 	switch(mesDelAño)
 	{
-		case "Enero": 
+		case"Enero":
 			alert("Que comiences bien el año!!!");
 			break;
-		case "Marzo": 
+		case "Marzo":
 			alert("A clases!!!");
 			break;
-		case "Julio": 
+		case "Julio":
 			alert("Se vienen las vacaciones!!!");
 			break;
-		case "Diciembre": 
+		case"Diciembre":
 			alert("Felices fiestas!!!");
-			break;
-		default:
-			alert("Un mes sin importancia");
 			break;
 
 	}
