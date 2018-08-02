@@ -1,4 +1,6 @@
-/* NOMBRE|SEXO|EDAD	
+function Mostrar()
+{
+	/* NOMBRE|SEXO|EDAD	
 
    JOSE    M    25 
    
@@ -23,7 +25,7 @@ function mostrar()
 		nombre=prompt("Ingrese nombre valido");
 		
 		sexo=prompt("Ingrese sexo valido");
-		while(sexo!="m"&&sexo"f")
+		while(sexo!="m" && sexo=="f")
 		{
 			sexo=prompt("Ingrese sexo valido");
 		}
@@ -34,4 +36,17 @@ function mostrar()
 			edad=prompt("Ingrese edad");
 			edad=parseInt(edad);
 		}
-}
+	}
+
+	if(contador==0){
+		edadMax=edad;
+		edadMin=edad;
+		nombreMayor=nombre;
+	} else {
+		if(edad<edad){
+			edadMax=edad;
+			nombreMayor=nombre;
+		}
+		if(edadMin>edad){
+			edadMin=edad;
+		
