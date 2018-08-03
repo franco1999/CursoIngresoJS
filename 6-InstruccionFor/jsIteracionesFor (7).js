@@ -6,12 +6,13 @@ function Mostrar()
 	numero = prompt("ingrese un numero");
 	numero = parseInt(numero);
 
-	for(var i=0 ; i<numero; i++); {
+	for(var i=0 ; i<numero; i++);{
 
 		if(i % 0==0) {
 			numeroDivisor++
 			console.log(i);
 		}
+	}	
 
 }
 

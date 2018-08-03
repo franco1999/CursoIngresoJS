@@ -1,5 +1,5 @@
 function Mostrar()
-{
+/*{
 	var numero;
 	var contador;
 
@@ -18,4 +18,31 @@ function Mostrar()
 
 
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN */
+
+{
+	var divisores=0;
+	var numeroIngresado;
+	var numeroAnterior;
+
+
+	numeroIngresado=prompt("Ingrese numero");
+	numeroIngresado=parseInt(numeroIngresado);
+
+	for(numeroAnterior=numeroIngresado;numeroAnterior>1;numeroAnterior--)
+	{
+		if(numeroIngresado % numeroAnterior==0)
+		{
+			divisores++;
+		}
+	}
+	if(divisores==0)
+	{
+		console.log("Es primo");
+	} else 
+	{
+		console.log("NO es de los numeros primos");
+	}
+	console.log(divisores);
+	
+}
